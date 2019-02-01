@@ -20,19 +20,27 @@ Ready to write
     ```
     Pynance.data.replace(df)
     Pynance.data.replace(df, intoName = True)
-    Pynance.data.replace(df, intoName = False)
+    Pynance.data.replace(list, intoName = False)
     Pynance.data.replace(df, maintain = True)
     ```
 * Get the Price data of a stock
-def get_a_price(start, end, code, source):
-
     ```
     Pynance.data.price('005930.KS','2018-01-01')
     Pynance.data.price('005930', '2018-01-01', end = '2018-12-31')
     Pynance.data.price('삼성전자', '2018-01-01', end = '2018-12-31')
-    
+   
     Pynance.data.price(code_list, '2018-01-01')
     Pynance.data.price(code_df, '2018-01-01')
     ```
 
 ### Pynance.util
+
+
+
+## To do list
+* Replace
+    * Input problem - both list and dataframe
+* Price
+    * Do exceptional operation if no data
+    
+<br />

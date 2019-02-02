@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 import pandas_datareader as pdr
 # from multiprocessing import Pool
@@ -6,12 +7,11 @@ import pandas_datareader as pdr
 # ---------- PRICE DATA ----------
 
 # Get price data of the firm
-def get_a_price(start, end, code, source):
+def get_a_price(code, start, end, source='yahoo'):
     try:
         return pdr.DataReader(code, source, start, end)
     except:
         return False
-
 
 
 # ---------- CODE DATA ----------
@@ -82,7 +82,31 @@ def get_KOR_stockListed_df(target = ['kospi', 'kosdaq']):
 
     return data
 
+# Get code data easily
+def code(market, attribute=['code', 'name', 'market'], listed=True):
+    # print("Collecting code data for %s as requested form" % ("KOSPI & KOSDAQ" if market == 'all' else market.upper()))
+    # ERROR CHECK
+    if market not in ['kospi', 'kosdaq', 'all']:
+        print("ERROR - Invalid value of market")
+        return None
 
+    # Get code data
+    code_df = get_codeListed_df()
+
+    # listed에 따라 데이터 추가
+    if not listed:
+        code_df = get_codeDelisted_df()
+    elif listed == 'both':
+        code_df.append(get_codeListed_df())
+
+    # Eliminate unnecessary attributes
+    code_df = code_df[attribute]
+
+    # Eliminate unnecessary records
+    if market != 'all':
+        code_df = code_df[code_df['market'] == market]  # Specific market
+
+    return code_df
 
 
 # ---------- TOOLS ----------
@@ -100,8 +124,7 @@ def list_caseConverter(data, toLower = True):
 
     return data
 
-
-def purify(data, attribute = ['code', 'market'], convertRull = {'market' : {'kospi': '.KS', 'kosdaq': '.KQ'}}):
+def purify(data, attribute = ['code', 'name', 'market'], convertRull = {'market' : {'kospi': '.KS', 'kosdaq': '.KQ'}}):
     # Check the validity
 
     # Check converted data has meaning - attribute
@@ -118,34 +141,3 @@ def purify(data, attribute = ['code', 'market'], convertRull = {'market' : {'kos
     data = data[attribute]
 
     return data
-
-
-
-
-'''
-        
-
-    data = data[attribute]
-    data = data.loc[data['market'].isin(mktList)]
-
-
-
-
-
-def set_code_df(code_df, attribute=['code', 'market'], mkt_list=['kospi', 'kosdaq'], rull=
-    code_df = code_df[attribute]  # Processed for 'attribute'
-    code_df = code_df.loc[code_df['market'].isin(mkt_list)]  # Processed for 'mkt_list'
-
-    # Check the validity - elements of (List)mkt_list should be equal to keys of (Dict)convert
-    for mkt in mkt_list:
-        if  mkt not in rull.keys():
-            print("ERROR - There is no conversion form for %s." % (mkt))
-            return 1
-
-    # Convert to match transformation form
-    for mkt in mkt_list:
-        code_df.loc[code_df['market'] == mkt, 'market'] = rull[mkt]
-
-    return code_df
-
-'''

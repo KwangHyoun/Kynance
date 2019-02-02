@@ -1,55 +1,45 @@
-import pandas as pd
-import pandas_datareader as pdr
-from datetime import datetime as dt
-# from multiprocessing import Pool
-# import qgrid
 from util import *
+import time as dt
+from multiprocessing import Process
 
+# ---------- RUN WITH IMPORT ----------
+code_df = code('all')
+yahoo_code_df = purify(code_df)
+thread = 16
 
 # ---------- PRICE DATA ----------
 
-# Get all price histories listed
-def price(start, end=dt.now().strftime('%Y-%m-%d'), market='all', source='yahoo'):
+# Get price data for Republic of KOREA, Stock market.
+def price(stock_list, start, end=dt.now().strftime('%Y-%m-%d'), source = 'yahoo'):
+    # Suppose that the type of data is 'List'
 
-    results = {}
-    # Change 'code_df', if entered, to the entered value.
-    code_df = purify(code('all')) if market == 'all' else set_code_df(code('all'), mkt_list=[market])
+    result = {} # Dictionary to remember price data.
 
-    for i, row_df in code_df.iterrows():
-        results[row_df['code']] = get_a_price(start, end, row_df, source)
-        print(row_df['code'], " data collecting...")
-    df = pd.concat(results, axis=1)
-    return df
+    # 기업들의 기록 형식을 Yahoo finance API에 적절한 형태로 변환
+    data = list(map(lambda stock: code_df['code'][list(np.where(code_df==stock)[0])[0]] + \
+             code_df['market'][list(np.where(code_df==stock)[0])[0]]\
+             , stock_list))
 
-def code(market, attribute=['code', 'name', 'market'], listed=True):
-    # print("Collecting code data for %s as requested form" % ("KOSPI & KOSDAQ" if market == 'all' else market.upper()))
-    # ERROR CHECK
-    if market not in ['kospi', 'kosdaq', 'all']:
-        print("ERROR - Invalid value of market")
-        return None
+    for index, stock in enumerate(data):
+        proc = Process(target=get_a_price, args=(stock, start, end,))
+        result.append(proc)
+        if (index + 1) % thread == 0 or index == len(data) - 1:
+            try: proc.start()
+            except: print("ERROR IN PROC!")
 
-    # Get code data
-    code_df = get_listed_df()   
+    result_df = pd.concat(result, axis=1)
+    return result_df
 
-    # listed에 따라 데이터 추가
-    if not listed:
-        code_df = get_deListed_df()
-    elif listed == 'both':
-        code_df.append(get_deListed_df())
 
-    # Eliminate unnecessary attributes
-    code_df = code_df[attribute]
-
-    # Eliminate unnecessary records
-    if market == 'all':
-        pass  # 'all' - Kospi & Kosdaq
-    else:
-        code_df = code_df[code_df['market'] == market]  # Specific market
-
-    return code_df
 
 # Convert 'code' attribute into 'name'(Or 'name' into 'code')
-def convert(data, maintain = False, intoName=True, code_df=code('all', attribute=['code', 'name'], listed='both')):
+def convert(data, intoName=True, maintain = False,):
+    # The case that data is 'a' stock.
+    if type(data) == str:
+        if intoName:
+            return code_df['name'][list(np.where(code_df==data)[0])[0]]
+        elif not intoName:
+            return code_df['code'][list(np.where(code_df==data)[0])[0]]
 
     # Ensure that 'data' is (Dataframe)
     if type(data) == list: data = pd.DataFrame(data, columns=['code'])

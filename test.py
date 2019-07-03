@@ -1,4 +1,4 @@
-from data import *
+from Utility.util_data import *
 
 # Test cost()
 kospi = code('kospi')

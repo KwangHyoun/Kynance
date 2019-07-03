@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4bc626b-e7ac-4d00-a67e-231ab538e521" name="Default Changelist" comment="1st update">
+    <list default="true" id="596c210d-94a2-4777-8ef9-c23cffe8669e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/AnalysisTool/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/UserInfo/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/UserInfo/user_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trading/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utility/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utility/util_crawling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utility/util_dir.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utility/util_print.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Kynance.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Kynance.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utility/util_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,12 +25,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data.py">
+        <entry file="file://$PROJECT_DIR$/Strategy/DoubleBeta/Code/beta_1st.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="483">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -28,69 +39,181 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
+        <entry file="file://$PROJECT_DIR$/Utility/util_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="437">
+              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Strategy/DoubleBeta/Code/beta_2nd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="759">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Strategy/DoubleBeta/Code/setting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utility/util_crawling.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnalysisTool/rollings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="47" column="69" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utility/util_dir.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="828">
+              <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utility/util_print.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Strategy/DoubleBeta/Code/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/util.py">
+        <entry file="file://$PROJECT_DIR$/Utility/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+            <state relative-caret-position="276">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <element signature="e#260#353#0" />
-                <element signature="e#730#993#0" />
-                <element signature="e#1026#1059#0" />
-                <element signature="e#650#2138#0" />
-                <element signature="e#2400#2708#0" />
-                <element signature="e#3020#3507#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="300">
-                <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>/</find>
+      <find>\</find>
+      <find>post_fill</find>
+      <find>r.</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>\</replace>
+      <replace>//</replace>
+      <replace>post_len</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="CalmHyoun" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Data.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/data.py" />
+        <option value="$PROJECT_DIR$/version_manager/dir.py" />
+        <option value="$PROJECT_DIR$/env_setting.py" />
+        <option value="$PROJECT_DIR$/package_manage.py" />
+        <option value="$PROJECT_DIR$/package_management/package_manage.py" />
         <option value="$PROJECT_DIR$/util.py" />
+        <option value="$PROJECT_DIR$/data/__init__.py" />
+        <option value="$PROJECT_DIR$/package_management/pkgmanager.py" />
+        <option value="$PROJECT_DIR$/package_management/meta.py" />
+        <option value="$PROJECT_DIR$/package_management/__init__.py" />
+        <option value="$PROJECT_DIR$/data/bloomberg.py" />
+        <option value="$PROJECT_DIR$/package_management/environment.py" />
+        <option value="$PROJECT_DIR$/data.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/Analysis/Regression/rolling_regression.py" />
+        <option value="$PROJECT_DIR$/Strategy/DoubleBeta/__init__.py" />
+        <option value="$PROJECT_DIR$/Strategy/DoubleBeta/_setting.py" />
+        <option value="$PROJECT_DIR$/Strategy/DoubleBeta/beta_1st.py" />
+        <option value="$PROJECT_DIR$/util/dir_tree" />
+        <option value="$PROJECT_DIR$/_util/__init__.py" />
+        <option value="$PROJECT_DIR$/_util/test.py" />
+        <option value="$PROJECT_DIR$/_util/directory" />
+        <option value="$PROJECT_DIR$/directory_manager.py" />
+        <option value="$PROJECT_DIR$/print_manager.py" />
+        <option value="$PROJECT_DIR$/Strategy/DoubleBeta/setting.py" />
+        <option value="$PROJECT_DIR$/directory_mng.py" />
+        <option value="$PROJECT_DIR$/Utility/directory_mng.py" />
+        <option value="$PROJECT_DIR$/Utility/util_print.py" />
+        <option value="$PROJECT_DIR$/Strategy/DoubleBeta/Python/setting.py" />
+        <option value="$PROJECT_DIR$/Utility/util_dir.py" />
+        <option value="$PROJECT_DIR$/Strategy/DoubleBeta/Code/setting.py" />
+        <option value="$PROJECT_DIR$/Utility/util_download.py" />
+        <option value="$PROJECT_DIR$/Data/UserInfo/user_data.py" />
+        <option value="$PROJECT_DIR$/Strategy/DoubleBeta/Code/beta_1st.py" />
+        <option value="$PROJECT_DIR$/Utility/util_crawling.py" />
+        <option value="$PROJECT_DIR$/Utility/util.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1721" />
+    <option name="height" value="720" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -102,10 +225,22 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\iCloudDrive\Package\Kynance\Utility" />
+      <recent name="C:\Users\USER\iCloudDrive\Package\Kynance\util" />
+      <recent name="C:\Users\USER\iCloudDrive\Package\Kynance\Strategy\BetaSensitivity" />
+      <recent name="C:\Users\USER\iCloudDrive\kynance\package_management" />
+      <recent name="C:\Users\USER\iCloudDrive\kynance" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -119,113 +254,389 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Python.setting (2)">
+    <configuration name="beta_1st" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Kynance" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Strategy/DoubleBeta/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Strategy/DoubleBeta/Code/beta_1st.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="setting (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Kynance" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Strategy/DoubleBeta/Python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Strategy/DoubleBeta/Python/setting.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="setting (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Kynance" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Strategy/DoubleBeta/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Strategy/DoubleBeta/Code/setting.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="util_dir" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Kynance" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utility" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utility/util_dir.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="util_download" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Kynance" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utility" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\USER\iCloudDrive\Package\Kynance\Utility\util_crawling.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.setting (2)" />
+        <item itemvalue="Python.util_dir" />
+        <item itemvalue="Python.util_download" />
+        <item itemvalue="Python.beta_1st" />
+        <item itemvalue="Python.setting (1)" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b4bc626b-e7ac-4d00-a67e-231ab538e521" name="Default Changelist" comment="" />
-      <created>1548731912030</created>
+      <changelist id="596c210d-94a2-4777-8ef9-c23cffe8669e" name="Default Changelist" comment="" />
+      <created>1556522665220</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1548731912030</updated>
+      <updated>1556522665220</updated>
     </task>
-    <task id="LOCAL-00001" summary="1st update">
-      <created>1548731953373</created>
+    <task id="LOCAL-00001" summary="copy the previous.">
+      <created>1556522763510</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1548731953373</updated>
+      <updated>1556522763510</updated>
     </task>
-    <task id="LOCAL-00002" summary="1st update">
-      <created>1548732002523</created>
+    <task id="LOCAL-00002" summary="copy the previous.">
+      <created>1556522824793</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1548732002523</updated>
+      <updated>1556522824793</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="copy the previous.">
+      <created>1556525494775</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556525494776</updated>
+    </task>
+    <task id="LOCAL-00004" summary="copy the previous.">
+      <created>1556525507788</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556525507788</updated>
+    </task>
+    <task id="LOCAL-00005" summary="package_management.py &#10; - directory management(complete)&#10; &#10;data.bloomberg.py &#10; - draft">
+      <created>1556611300129</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556611300129</updated>
+    </task>
+    <task id="LOCAL-00006" summary="package_management.py &#10; - directory management(complete)&#10; &#10;data.bloomberg.py &#10; - draft">
+      <created>1556715290742</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556715290742</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="-7" y="-7" width="2308" height="935" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16772375" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09383378" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32914925" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49910635" visible="true" weight="0.3542654" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915523" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.25301206" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49955317" weight="0.38258576" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.5019857" side_tool="true" visible="true" weight="0.36551723" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.4980143" weight="0.32635984" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1st update" />
-    <option name="LAST_COMMIT_MESSAGE" value="1st update" />
+    <MESSAGE value="copy the previous." />
+    <MESSAGE value="package_management.py &#10; - directory management(complete)&#10; &#10;data.bloomberg.py &#10; - draft" />
+    <option name="LAST_COMMIT_MESSAGE" value="package_management.py &#10; - directory management(complete)&#10; &#10;data.bloomberg.py &#10; - draft" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/version_manager/dir.py" />
+    <entry file="file://$PROJECT_DIR$/test_nmap.py" />
+    <entry file="file://$PROJECT_DIR$/data/code.py" />
+    <entry file="file://$PROJECT_DIR$/data/data.py" />
+    <entry file="file://$PROJECT_DIR$/dtstructure/__init__.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1454627293/nt.py" />
+    <entry file="file://$PROJECT_DIR$/Data/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/package_management/pkgmanager.py" />
+    <entry file="file://$PROJECT_DIR$/package_management/meta.py" />
+    <entry file="file://$PROJECT_DIR$/../Project/Quant-Projects/Ho-Lee.py" />
+    <entry file="file://$PROJECT_DIR$/data/bloomberg.py" />
+    <entry file="file://$PROJECT_DIR$/package_management/environment.py" />
+    <entry file="file://$PROJECT_DIR$/package_management/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/AnalysisTools/Regression/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/AnalysisTools/Regression/rolling_regression.py" />
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/Strategy/DoubleBeta/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/Strategy/DoubleBeta/_setting.py" />
+    <entry file="file://$PROJECT_DIR$/Garbage/test_nmap.py" />
+    <entry file="file://$PROJECT_DIR$/Garbage/test.py" />
+    <entry file="file://$PROJECT_DIR$/ExerciseBook/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExerciseBook/main.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExerciseBook/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="300">
-            <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          </first_editor>
+          <first_editor />
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data.py">
+    <entry file="file://$PROJECT_DIR$/ExerciseBook/util.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Strategy/DoubleBeta/beta_2nd.py" />
+    <entry file="file://$PROJECT_DIR$/util/util.py" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_util/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/_util/test.py" />
+    <entry file="file://$PROJECT_DIR$/_util/directory" />
+    <entry file="file://$PROJECT_DIR$/Strategy/DoubleBeta/DoubleBeta.ipynb" />
+    <entry file="file://$PROJECT_DIR$/Strategy/DoubleBeta/beta_1st.py" />
+    <entry file="file://$PROJECT_DIR$/print_manager.py" />
+    <entry file="file://$PROJECT_DIR$/Strategy/DoubleBeta/Python_file" />
+    <entry file="file://$PROJECT_DIR$/Strategy/DoubleBeta/setting.py" />
+    <entry file="file://$PROJECT_DIR$/Utility/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Garbage/version_manager/dir.py" />
+    <entry file="file://$PROJECT_DIR$/Garbage/version_manager/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/Data/UserInfo/user_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Strategy/DoubleBeta/Code/beta_2nd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util.py">
+    <entry file="file://$PROJECT_DIR$/Strategy/DoubleBeta/Code/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Strategy/DoubleBeta/Code/setting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        <state>
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#260#353#0" />
-            <element signature="e#730#993#0" />
-            <element signature="e#1026#1059#0" />
-            <element signature="e#650#2138#0" />
-            <element signature="e#2400#2708#0" />
-            <element signature="e#3020#3507#0" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Strategy/DoubleBeta/Code/beta_1st.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utility/util_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utility/util_crawling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnalysisTool/rollings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="47" column="69" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utility/util_dir.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utility/util_print.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utility/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

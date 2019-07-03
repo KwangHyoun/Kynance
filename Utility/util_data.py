@@ -1,4 +1,4 @@
-from util import *
+from _util import *
 import time as dt
 from multiprocessing import Process
 
@@ -10,9 +10,8 @@ thread = 16
 # ---------- PRICE DATA ----------
 
 # Get price data for Republic of KOREA, Stock market.
-def price(stock_list, start, end=dt.now().strftime('%Y-%m-%d'), source = 'yahoo'):
     # Suppose that the type of data is 'List'
-
+`
     result = {} # Dictionary to remember price data.
 
     # 기업들의 기록 형식을 Yahoo finance API에 적절한 형태로 변환
